@@ -1,5 +1,5 @@
-//
 //  AppDelegate.swift
+//
 //  Light
 //
 //  Created by Andrew Korablin on 13.10.17.
