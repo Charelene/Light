@@ -3,8 +3,6 @@
 //  Light
 //
 //  Created by Andrew Korablin on 13.10.17.
-//  Copyright © 2017 Andrew Korablin. All rights reserved.
-//
 
 import UIKit
 var  lightOn = true
