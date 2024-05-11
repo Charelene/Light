@@ -11,11 +11,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var lightButton: UIButton!
     
     @IBAction func buttonPressed(_ sender: Any) {
-        lightOn = !lightOn
+        lightOn.toggle()
         updateUI()
       
     }
-    func updateUI() {
+    
+    fileprivate func updateUI() {
         if lightOn {
             view.backgroundColor = .white
             lightButton.setTitle("On", for: .normal)
@@ -27,7 +28,8 @@ class ViewController: UIViewController {
             lightButton.setTitleColor(.white, for: .normal)
             UIScreen.main.brightness = 0.1
         }
-        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UIScreen.main.brightness = 1.0
